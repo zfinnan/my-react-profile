@@ -7,6 +7,7 @@ import Contact from './Components/Contact';
 import Skills from './Components/Skills';
 import SkillDetails from './Components/SkillDetails'
 import Nav from './Components/Nav'
+import Weather from './Components/pages/Weather'
 
 // style
 import './App.css';
@@ -51,6 +52,7 @@ function App() {
           return <SkillDetails skill={targetSkill} />
         }} 
       />
+      <Route path="/weather" component={Weather}/>
     </div>
     </BrowserRouter>
   );
